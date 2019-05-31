@@ -1,0 +1,65 @@
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+ crossorigin="anonymous">
+
+
+<body>
+
+
+  
+    <div class="row" >
+
+      <div class="col-md-4 mx-auto">
+        <div class="card contenedor" >
+          <div class="card-header text-center textico">
+              Registro de Cuenta
+          </div>
+
+          
+          
+          <div class="card-body" class="cardbody">
+            <div class="reply">
+            
+              
+              <div class="reply_form_container">
+                
+                <!-- Reply Form -->
+  
+                <form id="reply_form" action="post">
+                  <div>
+                    <input [(ngModel)]="nombre" id="reply_form_name" class="input_field reply_form_name" type="text" placeholder="Name" required="required" data-error="Name is required." name="Nombre"  required  #nameChangeModel="ngModel">
+                    <input [(ngModel)]="apellido" id="reply_form_lastname" class="input_field reply_form_email" type="text" placeholder="Lastname" required="required" data-error="Valid email is required." name="Apellido"  required  #nameChangeModel="ngModel">
+                    <input [(ngModel)]="email" id="reply_form_password" class="input_field reply_form_name" type="text" placeholder="Password" required="required" data-error="Password is required." name="contrasena"  required  #nameChangeModel="ngModel">
+                    <input [(ngModel)]="contrasena" id="reply_form_email" class="input_field reply_form_email" type="text" placeholder="E-mail" required="required" data-error="Valid email is required." name="email"  required  #nameChangeModel="ngModel">
+                    <input [(ngModel)]="tipo" id="reply_form_type" class="input_field reply_form_subject" type="text" placeholder="Type" required="required" data-error="type is required." name="tipo"  required  #nameChangeModel="ngModel">
+                  </div>
+                  <div align="center"> 
+
+                    <button id="reply_form_submit" type="submit" class="reply_submit_btn trans_300" value="Submit" (click)="registrarPeriodista()" routerLink="../perfil">
+                      Registrar
+                    </button>
+                  </div>
+  
+                </form>
+  
+              </div>
+            </div>
+  
+        
+
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <footer  class="navbar">
+        <div class="container text-center">
+                <h3 class="navbar-text col-md-12 col-sm-12 col-xs-12"> </h3>
+        </div>
+    </footer>
+
+</body>
+

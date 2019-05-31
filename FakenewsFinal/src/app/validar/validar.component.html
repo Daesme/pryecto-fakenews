@@ -1,0 +1,139 @@
+
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+ crossorigin="anonymous">
+
+
+ <header class="header d-flex flex-row justify-content-end align-items-center trans_200">
+  
+    <!-- Logo -->
+    <div class="logo mr-auto">
+      <a href="#">Look<span>News</span></a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main_nav justify-self-end text-right">
+      <ul>
+        <li><a href="perfil">Perfil</a></li>
+        <li><a href="noticias">Noticias</a></li>
+        
+        <li><a href="validar">Validar</a></li>
+        
+      </ul>
+      
+      <!-- Search -->
+      <div class="search">
+        <div class="search_content d-flex flex-column align-items-center justify-content-center">
+          <div class="search_button d-flex flex-column align-items-center justify-content-center">
+
+          </div>
+
+          <form id="search_form" class="search_form bez_1">
+            <input type="search" class="search_input bez_1">
+          </form>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="hamburger_container bez_1">
+      <i class="fas fa-bars trans_200"></i>
+    </div>
+ 
+    
+  </header>
+            <!-- Menu -->
+  
+            <div class="menu_container">
+                <div class="menu menu_mm text-right">
+                  <div class="menu_close"><i class="far fa-times-circle trans_200"></i></div>
+                  <ul class="menu_mm">
+                    <li class="menu_mm"><a href="perfil">Perfil</a></li>
+                    <li class="menu_mm"><a href="noticias">Noticias</a></li>
+                    
+                    <li class="menu_mm"><a href="validar">Validar</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+              <div class="home">
+                <div class="home_background_container prlx_parent">
+                  <div class="home_background prlx" style="background-image:url(https://www.thedigitalmarketingbureau.com/wp-content/uploads/2017/02/Blockchain-banner.jpg)"></div>
+                </div>
+                
+                <div class="home_title">
+                  <div class="next_section_scroll">
+                    <div class="next_section nav_links" data-scroll-to=".service_boxes">
+                      <i class="fas fa-chevron-down trans_200"></i>
+                      <i class="fas fa-chevron-down trans_200"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<body>
+    <br>
+
+  
+    <div class="row" >
+
+      <div class="col-md-6 mx-auto">
+        <div class="card contenedor" >
+          <div class="card-header text-center textico">
+              Validar Noticia
+          </div>
+          
+          <div class="card-body" class="cardbody">
+            <div class="reply">
+            
+              
+              <div class="reply_form_container">
+                
+                <!-- Reply Form -->
+  
+                <form id="reply_form" action="post">
+                  <div>
+                      
+             
+
+                      <input [(ngModel)]="hash" id="reply_form_hash" class="input_field reply_form_subject" type="text" placeholder="Hash" required="required" data-error="Subject is required." name="hash" required
+                      #nameChangeModel="ngModel">
+                      
+                      
+                      <input [(ngModel)]="url" id="reply_form_url" class="input_field reply_form_subject" type="text" placeholder="URL" required="required" data-error="Subject is required." name="url" required
+                      #nameChangeModel="ngModel">
+                      
+                  </div>
+                  <div align="center"> 
+                    
+                  <button id="reply_form_submit" type="submit" class="reply_submit_btn trans_300" value="Submit" (click)="hastu()" >
+                  Hash
+                  </button>
+                      <button id="reply_form_submit" type="submit" class="reply_submit_btn trans_300" value="Submit" (click)="registraarImagen()" >
+                      Validar
+                    </button>
+                  </div>
+  
+                </form>
+  
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    
+    </div>
+
+
+    <footer  class="navbar">
+        <div class="container text-center">
+                <h3 class="navbar-text col-md-12 col-sm-12 col-xs-12"> </h3>
+        </div>
+    </footer>
+
+</body>
+
+
